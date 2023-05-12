@@ -1,24 +1,7 @@
 <template>
-  <mindmap
-    style="height: 100vh"
-    v-model="data"
-    @update:model-value="onChange"
-    :locale="locale"
-    :branch="4"
-    :x-gap="84"
-    :y-gap="18"
-    :zoom="true"
-    :fit-btn="true"
-    :center-btn="true"
-    :download-btn="true"
-    :drag="true"
-    :edit="true"
-    :add-node-btn="true"
-    :sharp-corner="false"
-    :ctm="true"
-    :timetravel="false"
-    :vertical="true"
-  />
+  <mindmap style="height: 100vh" v-model="data" @update:modelValue="onChange" :locale="locale" :branch="4" :x-gap="84"
+    :y-gap="18" :zoom="true" :fit-btn="true" :center-btn="true" :download-btn="true" :drag="true" :edit="true"
+    :add-node-btn="true" :sharp-corner="false" :ctm="true" :timetravel="false" :vertical="true" />
 </template>
 
 <script>
@@ -31,19 +14,23 @@ export default {
   components: { mindmap },
   data() {
     return {
-      data: learn,
+      data: [...learn],
       locale: "en",
     };
   },
   methods: {
     onChange() {
-      console.log(this.data);
+      console.log("Update", JSON.parse(JSON.stringify(this.data)))
     },
-  },
+  }
 };
 </script>
 
 <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   width: 100%;
   height: calc(100vh - 16px);
