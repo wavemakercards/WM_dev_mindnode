@@ -5,36 +5,71 @@
       {
         "name": " preliminary knowledge ",
         "children": [
-          { "name": "HTML & CSS" },
-          { "name": "JavaScript" },
-          { "name": "DOM" },
-          { "name": "SVG" },
-          { "name": "test\ntest" }
+          {
+            "name": "HTML & CSS",
+            "uuid": 123342
+          },
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "DOM"
+          },
+          {
+            "name": "SVG"
+          },
+          {
+            "name": "test\ntest"
+          }
         ]
       },
       {
         "name": " installation ",
         "collapse": true,
-        "children": [{ "name": " folded node " }]
+        "children": [
+          {
+            "name": " folded node "
+          }
+        ]
       },
       {
         "name": " Getting Started ",
         "children": [
-          { "name": " selection " },
-          { "name": "test" },
-          { "name": " Binding Data " },
-          { "name": " Add and remove elements " },
+          {
+            "name": " selection "
+          },
+          {
+            "name": "test"
+          },
+          {
+            "name": " Binding Data "
+          },
+          {
+            "name": " Add and remove elements "
+          },
           {
             "name": " Simple Graphics ",
             "children": [
-              { "name": " Histogram " },
-              { "name": " line chart " },
-              { "name": " scatterplot " }
+              {
+                "name": " Histogram "
+              },
+              {
+                "name": " line chart "
+              },
+              {
+                "name": " scatterplot "
+              }
             ]
           },
-          { "name": " scale " },
-          { "name": " Generator " },
-          { "name": " transition " }
+          {
+            "name": " scale "
+          },
+          {
+            "name": " Generator "
+          },
+          {
+            "name": " transition "
+          }
         ],
         "left": true
       },
@@ -45,9 +80,15 @@
       {
         "name": " level one node ",
         "children": [
-          { "name": " child node 1 " },
-          { "name": " child node 2 " },
-          { "name": " child node 3 " }
+          {
+            "name": " child node 1 "
+          },
+          {
+            "name": " child node 2 "
+          },
+          {
+            "name": " child node 3 "
+          }
         ]
       }
     ]

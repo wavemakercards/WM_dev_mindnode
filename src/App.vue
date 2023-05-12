@@ -1,6 +1,6 @@
 <template>
   <mindmap style="height: 100vh" v-model="data" @update:modelValue="onChange" @click="doClick" :locale="locale"
-    :branch="4" :x-gap="84" :y-gap="18" :zoom="true" :fit-btn="true" :center-btn="true" :download-btn="true" :drag="true"
+    :branch="4" :x-gap="84" :y-gap="40" :zoom="true" :fit-btn="true" :center-btn="true" :download-btn="true" :drag="true"
     :edit="true" :add-node-btn="true" :sharp-corner="false" :ctm="false" :timetravel="false" :vertical="true" />
 </template>
 
@@ -27,7 +27,7 @@ export default {
       if (node) {
         let d = node.dataset.id.split("-")
         console.log(d)
-        let result = [...this.data]
+        let result = this.data
         result = result[0]
         d.forEach((v, i) => {
           if (i != 0) {
@@ -47,8 +47,10 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -63,10 +65,55 @@ body {
   grid-template-rows: 48px 1px auto;
 }
 
+/*
 .Mindmap_fit_fgvb6,
 .Mindmap_gps_fgvb6,
 .Mindmap_download_fgvb6 {
   border: 1px solid red;
   background: black;
+}
+
+.Mindmap_text_fgvb6 tspan {
+  stroke: none;
+  fill: #fff;
+}
+*/
+.node .Mindmap_content_fgvb6 .Mindmap_text_fgvb6 rect {
+  stroke: darkblue;
+  fill: #fff;
+  border-radius: 20px;
+  opacity: 1;
+  margin: 10px;
+  bottom: 40px;
+}
+
+.node .Mindmap_selected_fgvb6 .Mindmap_text_fgvb6 rect {
+  stroke: darkblue;
+  fill: lightgreen;
+  border-radius: 20px;
+  opacity: 1;
+  margin: 10px;
+  bottom: 40px;
+}
+
+foreignObject {
+  overflow: visible;
+  height: fit-content;
+}
+
+foreignObject div {
+  stroke: darkblue;
+  fill: #fff;
+  opacity: 1;
+  padding: 10px !important;
+  border-radius: 5px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+  margin: 10px;
+  border: 2px solid darkblue;
+
+  background-color: #fff;
+  ;
 }
 </style>
