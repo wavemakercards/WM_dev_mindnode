@@ -21,6 +21,8 @@ export default {
   methods: {
     onChange() {
       console.log("Update", JSON.parse(JSON.stringify(this.data)))
+
+      /// might need to do some tewaking of the data to make sure each node has a uuid somehow
     },
     doClick() {
       let node = document.getElementsByClassName("Mindmap_selected_fgvb6")[0]
