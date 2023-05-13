@@ -11,9 +11,7 @@
     "core-js": "^3.6.5",
     "vue": "^3.2.33",
     "vue-uuid": "^3.0.0",
-    "vue3-mindmap": "^0.5.12",
-    "vue3-mindmap-ou": "^0.5.19",
-    "vue3-mindmap-wavemaker": "^0.5.17"
+    "vue3-mindmap-ou": "^0.5.19"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
