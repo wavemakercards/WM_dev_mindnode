@@ -75,7 +75,44 @@
       },
       {
         "name": " Advanced ",
-        "left": true
+        "left": true,
+        "children": [
+          {
+            "name": " selection "
+          },
+          {
+            "name": "test"
+          },
+          {
+            "name": " Binding Data "
+          },
+          {
+            "name": " Add and remove elements "
+          },
+          {
+            "name": " Simple Graphics ",
+            "children": [
+              {
+                "name": " Histogram "
+              },
+              {
+                "name": " line chart "
+              },
+              {
+                "name": " scatterplot "
+              }
+            ]
+          },
+          {
+            "name": " scale "
+          },
+          {
+            "name": " Generator "
+          },
+          {
+            "name": " transition "
+          }
+        ]
       },
       {
         "name": " level one node ",
