@@ -2,18 +2,19 @@
     <mindmap style="height: 100vh" v-model="$root.mindNodeData" @update:modelValue="onChange" @click="doClick"
         :locale="locale" :branch="lineThickness" :x-gap="xgap" :y-gap="ygap" :zoom="zoom" :fit-btn="fitbtn"
         :center-btn="centerbtn" :download-btn="downloadbtn" :drag="draggable" :edit="editable" :add-node-btn="addnodebtn"
-        :sharp-corner="sharpcorner" :ctm="contextMenu" :timetravel="timetravel" :vertical="true" />
+        :sharp-corner="sharpcorner" :ctm="contextMenu" :timetravel="timetravel" :vertical="vertical"
+        :contextTxt="$root.lang" />
 </template>
   
 <script>
-import mindmap from "vue3-mindmap";
-import "vue3-mindmap/dist/style.css";
+import mindmap from "vue3-mindmap-ou";
+import "vue3-mindmap-ou/dist/style.css";
 export default {
     name: "App",
     components: { mindmap },
     data() {
         return {
-            locale: "fr",
+            locale: "en",
             lineThickness: 4,
             xgap: 84,
             ygap: 40,
